@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
 })
 
 input.addEventListener('keydown', (e) => {
-    // console.log(e.key);
+    
     if (e.key === 'Enter') {
         if (input.value !== "") {
             getUserData(url + input.value);
@@ -28,7 +28,7 @@ async function getUserData(gitUrl) {
         throw data;
     }
     updateProfile(data);
-    // return data;
+    
 }
 
 let dateSegment;
@@ -62,7 +62,7 @@ function updateProfile(data) {
         const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
-        // console.log(name);
+        
         userImage.src = `${data.avatar_url}`;
         name.innerText = data?.name;
         username.innerText = `@${data?.login}`;
@@ -100,7 +100,7 @@ function updateProfile(data) {
 }
 
 
-// Dark And Light Mode 
+ 
 const modeBtn = get("modeBtn");
 const modeText = get("modeText");
 const modeIcon = get("modeIcon");
@@ -145,28 +145,28 @@ function enableLightMode() {
 }
 
 
-// This code checks if the user's device has a preference for dark mode
+
 const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-// Check if there is a value for "dark-mode" in the user's localStorage
+
 if (localStorage.getItem("dark-mode") === null) {
-    // If there is no value for "dark-mode" in localStorage, check the device preference
+    
     if (prefersDarkMode) {
-        // If the device preference is for dark mode, apply dark mode properties
+        
         enableDarkMode();
     } else {
-        // If the device preference is not for dark mode, apply light mode properties
+       
         enableLightMode();
     }
 } else {
-    // If there is a value for "dark-mode" in localStorage, use that value instead of device preference
+   
     if (localStorage.getItem("dark-mode") === "true") {
-        // If the value is "true", apply dark mode properties
+       
         enableDarkMode();
     } else {
-        // If the value is not "true", apply light mode properties
+       
         enableLightMode();
     }
 }
 
-getUserData(url + "priyansh70");
+getUserData(url + "AnkitYadav0809");
