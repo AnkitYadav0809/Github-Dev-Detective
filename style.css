@@ -6,7 +6,7 @@
   --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
   --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
   --lm-icon-bg: brightness(100%);
-  /* Btn */
+  
   --btn: #0079ff;
   --btn-hover: #60abff;
 }
@@ -124,7 +124,7 @@ main {
 .searchContainer #btn {
   background: var(--btn);
   color: #fff;
-  /* outline: none; */
+
   border: none;
   border-radius: 4px;
   padding: 12px 16px;
@@ -169,9 +169,7 @@ main {
 #userImage {
   width: 90px;
   border-radius: 90px;
-  /* position: absolute;
-  left: 0; */
-  /* margin-left: 40px; */
+ 
 }
 
 .profileInfoWrapper {
@@ -184,7 +182,7 @@ main {
 .profileName {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
+  
   gap: 7px;
 }
 
@@ -221,7 +219,7 @@ main {
 .profileStats {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+
   gap: 8px;
 }
 
